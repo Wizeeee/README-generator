@@ -58,15 +58,6 @@ const promptUser = () => {
       type: "input",
       name: "usage",
       message: "Provide instructions and examples for use. (Required)",
-      //use validate to prevent skipping question
-      validate: (usageInst) => {
-        if (usageInst) {
-          return true;
-        } else {
-          console.log("You need to enter app installation instructions!");
-          return false;
-        }
-      },
     },
     {
       //credits to...
